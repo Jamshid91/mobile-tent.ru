@@ -147,19 +147,28 @@ const complex = new Swiper('.swiper-complex', {
 });
 
 
-const selects = document.querySelectorAll('.select-head'),
-      selectLists = document.querySelectorAll('.select-list li');
-
-
-selects.forEach(select => {
-  select.addEventListener('click', () => {
-    select.parentElement.classList.toggle('showSelect')
-  });
-})
-
-selectLists.forEach(list => {
-  list.addEventListener('click', () => {
-    list.parentElement.parentElement.classList.toggle('showSelect');
-    list.parentElement.previousElementSibling.children[0].textContent = list.textContent;
-  });
-})
+const youCanGet_catalog = new Swiper('.swiper-youCanGet-catalog', {
+  loop: true,
+      navigation: {
+      nextEl: '.swiper-youCanGet-catalog-next',
+      prevEl: '.swiper-youCanGet-catalog-prev',
+    },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.1,
+          spaceBetween: 16,
+        },
+        576: {
+          slidesPerView: 1.3,
+          spaceBetween: 16,
+        },
+        767: {
+          slidesPerView: 2.1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+  }
+});
