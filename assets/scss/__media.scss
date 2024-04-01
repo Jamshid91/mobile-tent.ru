@@ -667,6 +667,53 @@
         }
       }
     }
+
+    .tab-options {
+      .options-btn {
+        margin: 20px 0 30px;
+        .option-btn {
+          &-text {
+            height: 75px;
+            font-size: 14px;
+            line-height: 14px;
+            span {
+              margin-top: -5px;
+            }
+          }
+        }
+      }
+      .option-info {
+        img {
+          width: 47%;
+          object-fit: contain;
+        }
+        .info {
+          width: 47%;
+          padding: 16px;
+          &-list {
+            li {
+              font-size: 16px;
+              line-height: 20px;
+              margin-bottom: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .equip {
+      &-item {
+        padding: 204px 20px 20px;
+        img {
+          max-width: 200px;
+          top: 20px;
+        }
+        &__text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
   }
   
   .footer {
@@ -1473,6 +1520,29 @@
         }
       }
     }
+
+    
+    .equip {
+      padding: 30px 0;
+      &-box {
+        overflow-x: scroll;
+      }
+      .container {
+        padding-right: 0;
+      }
+      &-item {
+        min-width: 318px;
+        margin-right: 24px;
+        img {
+          max-width: 300px;
+          top: 0;
+        }
+        &__text {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
   }
          
   .footer {
@@ -1858,6 +1928,44 @@
       margin: 0;
       .bestsellers-card {
         width: 100%;
+      }
+    }
+
+    .tab-options {
+      margin: 30px 0;
+      .options-btn {
+        margin: 25px 0 30px;
+        overflow-x: scroll;
+        padding-bottom: 15px;
+        .option-btn {
+          margin-right: 12px;
+          width: auto;
+          &-text {
+            height: auto;
+            flex-wrap: nowrap;
+            padding: 13px 30px;
+            display: flex;
+            span {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+      .option-info {
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+        .info {
+          width: 100%;
+          padding: 16px;
+          &-list {
+            li {
+              font-size: 11px;
+              line-height: 16px;
+            }
+          }
+        }
       }
     }
   }
@@ -3281,6 +3389,10 @@
           }
         }
       }
+    }
+    
+    .tab-options {
+      margin-top: 100px;
     }
   }
 

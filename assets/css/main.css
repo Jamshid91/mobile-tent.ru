@@ -5570,6 +5570,206 @@ input, textarea, select, button,
   padding-bottom: 34px !important;
 }
 
+.main .tab-options {
+  margin: 60px 0;
+}
+
+.main .tab-options .title-text {
+  margin-bottom: 0;
+}
+
+.main .tab-options .options-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 36px 0 20px;
+}
+
+.main .tab-options .options-btn .option-btn {
+  cursor: pointer;
+  width: 24%;
+}
+
+.main .tab-options .options-btn .option-btn input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.main .tab-options .options-btn .option-btn-text {
+  width: 100%;
+  height: 94px;
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #fff;
+  -webkit-box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+          box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.main .tab-options .options-btn .option-btn-text span {
+  color: #527DC5;
+  padding-left: 5px;
+}
+
+.main .tab-options .options-btn .option-btn-text:hover {
+  opacity: 0.8;
+}
+
+.main .tab-options .options-btn .option-btn input[type="radio"]:checked ~ .option-btn-text {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#73a8ff), color-stop(#72a8ff), color-stop(#72a8ff), color-stop(#71a7ff), color-stop(#70a7ff), color-stop(#6aa2fe), color-stop(#659efc), color-stop(#5f99fb), color-stop(#548ef8), color-stop(#4b83f5), color-stop(#4278f1), to(#3c6cec));
+  background-image: -webkit-linear-gradient(top, #73a8ff, #72a8ff, #72a8ff, #71a7ff, #70a7ff, #6aa2fe, #659efc, #5f99fb, #548ef8, #4b83f5, #4278f1, #3c6cec);
+  background-image: -o-linear-gradient(top, #73a8ff, #72a8ff, #72a8ff, #71a7ff, #70a7ff, #6aa2fe, #659efc, #5f99fb, #548ef8, #4b83f5, #4278f1, #3c6cec);
+  background-image: linear-gradient(to bottom, #73a8ff, #72a8ff, #72a8ff, #71a7ff, #70a7ff, #6aa2fe, #659efc, #5f99fb, #548ef8, #4b83f5, #4278f1, #3c6cec);
+  color: #fff;
+}
+
+.main .tab-options .options-btn .option-btn input[type="radio"]:checked ~ .option-btn-text span {
+  color: #fff;
+}
+
+.main .tab-options .option-info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.main .tab-options .option-info img {
+  width: 47%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main .tab-options .option-info .info {
+  width: 47%;
+  padding: 37px 36px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  background: #E8EEF8;
+}
+
+.main .tab-options .option-info .info-list li {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.main .tab-options .option-info .info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.main .tab-options .option-info .info-list li a {
+  border-bottom: 1px solid #394355;
+}
+
+.main .tab-options .option-info .info-list li:hover a {
+  color: #335EC3;
+  border-color: #335EC3;
+}
+
+.main .equip {
+  background-image: -webkit-gradient(linear, left top, right top, from(#243057), color-stop(#2e3c64), color-stop(#374970), color-stop(#42567d), to(#4c638a));
+  background-image: -webkit-linear-gradient(left, #243057, #2e3c64, #374970, #42567d, #4c638a);
+  background-image: -o-linear-gradient(left, #243057, #2e3c64, #374970, #42567d, #4c638a);
+  background-image: linear-gradient(to right, #243057, #2e3c64, #374970, #42567d, #4c638a);
+  -webkit-border-radius: 30px;
+          border-radius: 30px;
+  padding: 60px 0;
+}
+
+.main .equip .title-text {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.main .equip-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .equip-item {
+  width: 24%;
+  height: 330px;
+  padding: 210px 27px 21px;
+  background-image: url(../img/png/card-bg.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 36px;
+}
+
+.main .equip-item__img {
+  position: absolute;
+  top: 5px;
+}
+
+.main .equip-item__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.main .equip-item__text span {
+  font-weight: 600;
+}
+
+.main .equip-item:nth-child(1) .equip-item__img {
+  top: -20px;
+}
+
+.main .equip-item:nth-child(2) .equip-item__img {
+  top: 15px;
+}
+
+.main .equip-item:last-child {
+  padding: 204px 18px 20px;
+}
+
 .footer {
   background: #171C29;
   padding-top: 42px;
@@ -6579,6 +6779,42 @@ input, textarea, select, button,
   .main .catalog-filter .catalog-box .bestsellers-card {
     width: 49%;
   }
+  .main .tab-options .options-btn {
+    margin: 20px 0 30px;
+  }
+  .main .tab-options .options-btn .option-btn-text {
+    height: 75px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .main .tab-options .options-btn .option-btn-text span {
+    margin-top: -5px;
+  }
+  .main .tab-options .option-info img {
+    width: 47%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main .tab-options .option-info .info {
+    width: 47%;
+    padding: 16px;
+  }
+  .main .tab-options .option-info .info-list li {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .main .equip-item {
+    padding: 204px 20px 20px;
+  }
+  .main .equip-item img {
+    max-width: 200px;
+    top: 20px;
+  }
+  .main .equip-item__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .footer {
     font-size: 12px;
   }
@@ -7319,6 +7555,27 @@ input, textarea, select, button,
   .main .searching-results .filter-box .size .filter-range {
     width: 80% !important;
   }
+  .main .equip {
+    padding: 30px 0;
+  }
+  .main .equip-box {
+    overflow-x: scroll;
+  }
+  .main .equip .container {
+    padding-right: 0;
+  }
+  .main .equip-item {
+    min-width: 318px;
+    margin-right: 24px;
+  }
+  .main .equip-item img {
+    max-width: 300px;
+    top: 0;
+  }
+  .main .equip-item__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .footer-item {
     width: 24%;
   }
@@ -7679,6 +7936,45 @@ input, textarea, select, button,
   }
   .main .searching-results .bestsellers-card {
     width: 100%;
+  }
+  .main .tab-options {
+    margin: 30px 0;
+  }
+  .main .tab-options .options-btn {
+    margin: 25px 0 30px;
+    overflow-x: scroll;
+    padding-bottom: 15px;
+  }
+  .main .tab-options .options-btn .option-btn {
+    margin-right: 12px;
+    width: auto;
+  }
+  .main .tab-options .options-btn .option-btn-text {
+    height: auto;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    padding: 13px 30px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .tab-options .options-btn .option-btn-text span {
+    margin-top: 0;
+  }
+  .main .tab-options .option-info img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .main .tab-options .option-info .info {
+    width: 100%;
+    padding: 16px;
+  }
+  .main .tab-options .option-info .info-list li {
+    font-size: 11px;
+    line-height: 16px;
   }
   .popUp.popUp-experience {
     overflow-y: scroll;
@@ -9034,6 +9330,9 @@ input, textarea, select, button,
   }
   .main .searching-results .filter-box .size .filter-range {
     width: 80% !important;
+  }
+  .main .tab-options {
+    margin-top: 100px;
   }
   .footer {
     font-size: 11px;
