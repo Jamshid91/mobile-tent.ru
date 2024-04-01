@@ -483,6 +483,14 @@
               }
             }
           }
+          .faq-box {
+            .faq-item {
+              height: 130px;
+              .photo {
+                max-width: 150px;
+              }
+            }
+          }
         }
       }
     }
@@ -709,6 +717,53 @@
           top: 20px;
         }
         &__text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .clients-subcategory {
+      padding: 30px 0;
+      .title-text {
+        color: #fff;
+        margin: 6px 0 24px;
+      }
+      .list {
+        li {
+          font-size: 11px;
+          line-height: 12px;
+          margin-right: 8px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .info {
+        margin: 24px 0;
+        display: flex;
+        &-item {
+          width: 50%;
+          p {
+            font-size: 11px;
+          }
+        }
+      }
+      .clients-item {
+        height: 300px;
+      }
+    }
+
+    .agreement {
+      &__img {
+        width: 300px;
+      }
+      &-info {
+        margin-top: -50px;
+        &:first-child {
+          margin-top: 0;
+        }
+        p {
           font-size: 14px;
           line-height: 16px;
         }
@@ -1543,6 +1598,45 @@
         }
       }
     }
+
+    .agreement {
+      margin-top: 30px;
+      &-left {
+        width: 100%;
+      }
+      &-right {
+        width: 100%;
+      }
+      &__img {
+        position: relative;
+        margin-top: -70px;
+      }
+      .title-text {
+        margin-bottom: 16px;
+      }
+      .title-subtext {
+        margin-bottom: 10px;
+      }
+      &-info {
+        margin-left: -40px;
+        &:first-child {
+          margin-top: 0;
+        }
+        p {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .guests-subcategory {
+      .title-text {
+        margin-bottom: 0;
+      }
+      .for-guests-info {
+        margin-top: 24px;
+      }
+    }
   }
          
   .footer {
@@ -1968,7 +2062,77 @@
         }
       }
     }
+
+    .quiz {
+      &-faqs {
+        .quiz-faq {
+         .faq-box {
+          grid-template-columns: repeat(2, 1fr);
+          .faq-item {
+            .photo {
+              max-width: 100px;
+            }
+          }
+         }
+        }
+      }
+     }
+
+     .not-found {
+      padding: 180px 0 35px;
+      .title-subtext {
+        background-image: linear-gradient(to bottom, #243057, #283557, #2c3957, #313e56, #374255);
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+      }
+      &-info {
+        margin-top: 20px;
+        padding: 18px 24px;
+        width: 100%;
+        &:last-child {
+          width: 100%;
+        }
+        &__title {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .info {
+          width: 48%;
+          &__title {
+            font-size: 14px;
+          }
+          &-list li {
+            font-size: 11px;
+            line-height: 12px;
+          }
+        }
+        .social {
+          a {
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
   }
+
+  .search-catalogs {
+    .catalog-nav {
+      flex-direction: column;
+    }
+    .catalog-nav-right {
+      padding: 0 20px;
+    }
+    .search-result {
+      width: 100%;
+      .products {
+        width: 100%;
+      }
+    }
+   }
+
   .popUp.popUp-experience {
     overflow-y: scroll;
     .popUp-content {
@@ -3394,7 +3558,41 @@
     .tab-options {
       margin-top: 100px;
     }
+
+    .clients-subcategory {
+      padding: 30px 0;
+    }
+
+    .awning-subcategory {
+      .title-text {
+        margin-bottom: 0;
+      }
+    }
   }
+
+  .search-catalogs {
+    .catalog-nav {
+      flex-direction: column;
+    }
+    .catalog-nav-right {
+      padding: 0;
+    }
+    .title {
+      padding-left: 0;
+    }
+    .search-result {
+      .products {
+        .product {
+          font-size: 11px;
+          line-height: 16px;
+          margin-bottom: 6px;
+          &-img {
+            width: 66px;
+          }
+        }
+      }
+    }
+   }
 
   .footer {
     font-size: 11px;

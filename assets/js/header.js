@@ -6,7 +6,12 @@ const menuBtn = document.querySelector('.menu-btn'),
       catalogs = document.querySelector('.catalogs'),
       cityBtns = document.querySelectorAll('.city-btn'),
       popUpCity = document.querySelector('.popUp-city'),
-      catalogLists = document.querySelectorAll('.catalog-nav-list__title');
+      catalogList = document.querySelectorAll('.catalog-nav-list'),
+      catalogLists = document.querySelectorAll('.catalog-nav-list__title'),
+      rightHeads = document.querySelectorAll('.right-head'),
+      catalogsProduct = document.querySelector('.catalogs-product'),
+      searchCatalog = document.querySelector('.search-catalogs'),
+      searchInp = document.querySelector('.search__inp');
 
 
 menuBtn.addEventListener('click', () => {
@@ -27,9 +32,41 @@ cityBtns.forEach(city => {
   })
 });
 
+searchInp.addEventListener('input', () => {
+  if(searchInp.value.length > 1) {
+    searchCatalog.classList.add('d-block')
+    catalogs.classList.remove('showCatalog')
+    catalogsBtn.classList.remove('clicked')
+  } else {
+    searchCatalog.classList.remove('d-block')
+  }
+})
+
+let count = 0;
 catalogLists.forEach(list => {
   list.addEventListener('click', () => {
-    list.parentElement.classList.toggle('showList')
+    if(count == 0) {
+      catalogList.forEach(elem => {
+        elem.classList.add('d-none');
+      })
+      list.parentElement.parentElement.classList.add('showList')
+      list.parentElement.parentElement.classList.remove('d-none');
+      catalogsProduct.classList.add('d-none')
+      return count = 1;
+    } else {
+      catalogList.forEach(elem => {
+        elem.classList.remove('d-none');
+        catalogsProduct.classList.remove('d-none')
+      });
+      list.parentElement.parentElement.classList.remove('showList')
+      return count = 0;
+    }
+  })
+});
+
+rightHeads.forEach(elem => {
+  elem.addEventListener('click', () => {
+    elem.parentElement.classList.toggle('hideNavs')
   })
 })
 
