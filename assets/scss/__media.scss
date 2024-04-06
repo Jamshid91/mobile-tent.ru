@@ -177,6 +177,30 @@
         }
       }
     }
+
+    .branding {
+      &-bg {
+        object-fit: cover;
+      }
+      &-info {
+        font-size: 14px;
+        line-height: 18px;
+        &:nth-child(1) {
+          width: 280px;
+          top: 140px;
+          right: 20%;
+          &::before {
+            top: 110%;
+          }
+        }
+        &:nth-child(2) {
+          width: 220px;
+        }
+        &:nth-child(3) {
+          width: 200px;
+        }
+      }
+    }
   }
 }
 
@@ -213,6 +237,25 @@
           font-size: 14px;
           line-height: 16px;
           margin-top: 6px;
+        }
+      }
+    }
+
+    .branding {
+      &-bg {
+        object-fit: cover;
+      }
+      &-info {
+        font-size: 14px;
+        line-height: 18px;
+        &:nth-child(1) {
+          right: 10%;
+        }
+        &:nth-child(2) {
+          left: 20%;
+        }
+        &:nth-child(3) {
+          left: 60%;
         }
       }
     }
@@ -707,6 +750,11 @@
           }
         }
       }
+      .slider {
+        img {
+          width: 100%;
+        }
+      }
     }
 
     .equip {
@@ -723,7 +771,7 @@
       }
     }
 
-    .clients-subcategory {
+    .clients-equipment {
       padding: 30px 0;
       .title-text {
         color: #fff;
@@ -767,6 +815,136 @@
           font-size: 14px;
           line-height: 16px;
         }
+      }
+    }
+    
+    .product-card {
+      .left,
+      .right {
+        width: 100%;
+      }
+
+      .card-tabs {
+        .card-tabs-btn {
+          label {
+            margin-right: 8px;
+            span {
+              font-size: 14px;
+              line-height: 16px;
+              padding: 8px 16px;
+              white-space: nowrap;
+            }
+          }
+        }
+        .card-tabs-box {
+          .list {
+            font-size: 11px;
+            line-height: 14px;
+          }
+        }
+      }
+
+      
+      .price-box {
+        .price-card {
+          width: 49%;
+        }
+      }
+    }
+
+    .other-sizes {
+      .bestsellers-card {
+        width: 49%;
+      }
+    }
+
+    .design-filter {
+      .select {
+        width: 250px;
+      }
+    }
+
+    .spa {
+      .container:first-child {
+        padding-right: 0;
+      }
+    }
+
+    .experience-faqs {
+      padding-top: 35px;
+      overflow: hidden;
+      .title-text {
+        margin: 0;
+      }
+      .experience-r {
+        transform: scale(1);
+        right: -5%;
+      }
+      .supervisor {
+        right: 0;
+        &-photo {
+          width: 120%;
+        }
+        &-info {
+          top: 85%;
+          left: 50%;
+        }
+      }
+      .title-subtext {
+        margin: 24px 0px;
+      }
+    }
+
+    .contacts {
+      .contact-address {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+        padding: 26px;
+        width: 525px;
+        margin-top: 24px;
+        p {
+          font-size: 14px;
+          line-height: 16px;
+          text-align: center;
+        }
+        a {
+          font-size: 11px;
+          line-height: 12px;
+          width: 48%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    } 
+
+    .company {
+      .info {
+        &-box {
+          width: 100%;
+        }
+      }
+    }
+
+    .officially {
+      .officially-img {
+        width: 50%;
+      }
+    }
+
+    .getModel {
+      &-img {
+        width: 50%;
+      }
+    }
+
+    .complex2 {
+      &-video {
+        margin-top: 30px;
+      }
+      .container {
+        padding-right: 24px;
       }
     }
   }
@@ -1629,7 +1807,7 @@
       }
     }
 
-    .guests-subcategory {
+    .guests-equipment {
       .title-text {
         margin-bottom: 0;
       }
@@ -1637,7 +1815,302 @@
         margin-top: 24px;
       }
     }
+
+    .branding {
+      height: 400px;
+      &-info {
+        font-size: 11px;
+        line-height: 16px;
+        &:nth-child(1) {
+          width: 200px;
+          top: 90px;
+        }
+        &:nth-child(2) {
+          top: 220px;
+        }
+      }
+    }
+
+    .agreement-equipment {
+      padding-bottom: -70px;
+      .agreement-right {
+        width: 100%;
+      }
+    }
+
+    .product-card {
+      .card-tabs {
+        .card-tabs-btn {
+          overflow-x: scroll;
+          padding-bottom: 5px;
+        }
+        .card-tabs-box {
+          margin-top: 24px;
+          grid-template-columns: repeat(1, 1fr);
+          padding-bottom: 0;
+        }
+      }
+      
+      .price-box {
+        .price-card {
+          width: 100%;
+        }
+      }
+    }
+
+    .tab-options {
+      .social {
+        width: 100%;
+      }
+    }
+
+    .videos {
+      .swiper-btn {
+       margin-top: 50px;
+        justify-content: center;
+        button {
+          position: relative;
+        }
+      }
+    }
+
+    .completed-work {
+      .info {
+        margin-bottom: 0;
+        .price {
+          margin-top: 18px;
+        }
+      }
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 24px;
+      margin-top: 50px;
+    }
+
+    .design-filter {
+      position: relative;
+      &-box {
+        position: absolute;
+        width: 100%;
+        background: #fff;
+        z-index: 99;
+        padding: 30px;
+        border-radius: 20px;
+        top: 130%;
+        right: 0;
+        box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+        display: none !important;
+      }
+    }
+
+    .showFilter {
+      .design-filter-box {
+        display: flex !important;
+      }
+    }
+
+    .fars {
+      .title-text {
+        margin: 30px 0;
+      }
+      .faqs-tab {
+        padding: 25px;
+        &-head {
+          padding: 0;
+          padding-bottom: 24px;
+          min-width: 100%;
+  
+          .faqs-tab-btn {
+            margin-bottom: 12px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        &-body {
+          padding: 0;
+          border: none;
+          border-top: 3px solid #4F5D800F;
+          padding-top: 24px;
+        }
+      }
+    }
+
+    .experience-faqs {
+      padding-top: 35px;
+      overflow: hidden;
+      padding-bottom: 230px;
+      .title-text {
+        margin: 0;
+      }
+      .experience-r {
+        transform: scale(1);
+        right: -5%;
+        bottom: 15%;
+      }
+      .supervisor {
+        position: relative;
+        width: 100%;
+        margin-top: 0px;
+        &-info {
+          width: 100%;
+          top: 92%;
+        }
+      }
+      .title-subtext {
+        margin: 24px 0px;
+      }
+      .social {
+        position: absolute;
+        top: 106%;
+        z-index: 3;
+      }
+    }
+
+    .company {
+      &-video {
+        margin-top: 24px;
+      }
+    }
+
+    .company-figures {
+      .numbers {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+
+    .officially {
+      .info {
+        width: 100%;
+      }
+    }
+
+    .presentation {
+      margin: 30px 0;
+      padding-top: 50px;
+      background-image: url(../img/png/cloud-bg2.png);
+      overflow: hidden;
+      .book {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+
+    
+
+  .meeting-box2 {
+    .title-text {
+      margin-bottom: 30px;
+    }
+    .meeting-city {
+      width: 100%;
+      &:first-child {
+        margin-bottom: 16px;
+      }
+    }
   }
+
+  .banner-tent {
+    background-image: url(../img/png/tent-bg2.png);
+    background-position: top;
+    border-radius: 20px;
+    padding: 45px 0 0;
+    .info {
+      font-size: 40px;
+      line-height: 50px;
+    }
+  }
+
+  .stages {
+    margin: 30px 0 60px;
+    .title-subtext {
+      margin: 16px 0 29px;
+    }
+    .stages-tabs {
+      .stages-tab-btns {
+        overflow-x: scroll;
+        margin-right: 0;
+        padding-bottom: 30px;
+        
+      .stages-tab-btn {
+        margin-bottom: 0;
+        cursor: pointer;
+        margin-right: 13px;
+        &:last-child {
+          margin-right: 0;
+        }
+       .btn-text {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 16px;
+       }
+      }
+      }
+    }
+    .stage-img {
+      height: 275px;
+      object-fit: cover;
+    }
+  }
+
+  .highTech,
+  .equipped,
+  .implemented {
+    &-box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .getModel {
+    &-img {
+      position: relative;
+      width: 100%;
+    }
+  }
+
+  .important {
+    background: linear-gradient(0deg, rgba(245, 246, 255, 0.1) 0%, #f5f6ff 100%);
+    border-radius: 20px;
+    padding-top: 30px;
+    .title-text {
+      margin-bottom: 22px;
+    }
+    &-item {
+      padding: 22px 16px;
+      width: 100%;
+      margin-bottom: 16px;
+      &__icon {
+        margin-right: 23px;
+      }
+      &__title {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &__text {
+        font-size: 11px;
+        line-height: 14px;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        width: 100%;
+      }
+    }
+  }
+
+  .often-asked {
+    .title-text {
+      margin-bottom: 24px;
+    }
+    &-item {
+      width: 100%;
+    }
+  }
+}
          
   .footer {
     &-item {
@@ -2061,6 +2534,16 @@
           }
         }
       }
+      .slider {
+        width: 100%;
+        .swiper-btn button:last-child {
+          right: 0;
+        }
+      }
+
+      .social {
+        margin-top: 24px;
+      }
     }
 
     .quiz {
@@ -2115,6 +2598,161 @@
           }
         }
       }
+    }
+    
+    .branding {
+      height: 350px;
+      padding: 25px 0;
+      &-info {
+        font-size: 11px;
+        line-height: 16px;
+        &:nth-child(1) {
+          width: 280px;
+          top: 100px;
+          right: 24px;
+        }
+        &:nth-child(2) {
+          top: 150px;
+          left: 24px;
+        }
+        &:nth-child(3) {
+          left: 60%;
+          bottom: 24px;
+        }
+      }
+    }
+
+    .review {
+      margin: 30px 0;
+      .review-box {
+        padding: 20px 24px;
+      }
+      .review-info {
+        width: 100%;
+        img {
+          margin-right: 0;
+        }
+      }
+      .review-photo {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .reviews {
+      .title-suptext {
+        margin-top: 30px;
+      }
+      .reviews-tab-head {
+        overflow-x: scroll;
+      }
+      .reviews-tab-btn {
+        margin-right: 12px;
+        span {
+          font-size: 11px;
+          line-height: 16px;
+          padding: 12px 24px;
+        }
+      }
+      .reviews-item {
+        .review {
+          .photos {
+            width: 100%;
+            .review-photo {
+              width: 49%;
+            }
+          }
+        }
+      }
+    }
+    
+    .contacts {
+      padding: 170px 0 0;
+      .head-page {
+        margin-bottom: 30px;
+      }
+      .title-subtext {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .info {
+        p {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      .contact-address {
+        padding: 26px 16px;
+        width: 100%;
+        a {
+          width: 49%;
+          padding: 9px 8px;
+        }
+      }
+  
+      .map {
+        height: auto;
+        padding: 0;
+        margin-top: 30px;
+        .map-img {
+          width: 100%;
+          object-fit: contain;
+        }
+        .map-info {
+          margin-top: 30px;
+          h3 {
+            font-size: 1px;
+            line-height: 16px;
+          }
+          .item {
+            font-size: 11px;
+          }
+        }
+      }
+    } 
+
+    .highTech,
+    .equipped,
+    .implemented {
+      &-box {
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 24px;
+        .highTech-card,
+        .equipped-card,
+        .implemented-card {
+          display: none;
+          &:first-child {
+            display: block;
+          }
+          &-info {
+            min-height: 90px;
+          }
+        &__title {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        &__text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+        }
+      }
+    }
+
+    .weDesign {
+      &-info {
+        padding: 16px 20px;
+        font-size: 24px;
+        line-height: 28px;
+      }
+      &-img {
+        margin-top: 24px;
+      }
+    }
+
+    .contacts2 {
+      padding-top: 0;
     }
   }
 
@@ -2236,6 +2874,13 @@
         left: 55%;
       }
     }
+
+    .head-page {
+      font-size: 10px;
+      line-height: 11px;
+      margin-bottom: 30px;
+    }
+
     .wrapper {
       padding: 190px 0 30px;
       &-info {
@@ -2286,10 +2931,9 @@
       margin-bottom: 350px;
     }
 
-    .wrapper-hangers {
-      .wrapper-bg {
-        // object-position: right top;
-      }
+    .wrapper-equipment,
+    .wrapper-equipment-sub {
+      padding-top: 175px;
     }
 
     .info-blocks {
@@ -3559,16 +4203,929 @@
       margin-top: 100px;
     }
 
-    .clients-subcategory {
+    .clients-equipment {
       padding: 30px 0;
     }
 
-    .awning-subcategory {
+    .awning-equipment {
       .title-text {
         margin-bottom: 0;
       }
     }
+    
+    .branding {
+      height: 480px;
+      &-bg {
+        object-position: bottom;
+      }
+      &-info {
+        font-size: 11px;
+        line-height: 16px;
+        padding: 6px;
+        &:nth-child(1) {
+          width: 285px;
+          top: 142px;
+          &::before {
+            right: 0;
+          }
+        }
+        &:nth-child(2) {
+          top: 82%;
+          left: 24px;
+          width: 190px;
+          &::before {
+            top: -100%;
+            left: 30%;
+          }
+        }
+        &:nth-child(3) {
+          left: 19px;
+          bottom: 190px;
+          &::before {
+            bottom: -80%;
+            left: 95%;
+          }
+        }
+      }
+    }
+
+    .product-card {
+      background-image: url(../img/png/pr-c-bg.png);
+      background-position: center -1500px;
+      .container {
+        padding-right: 0;
+      }
+      .right {
+        margin-top: 20px;
+        .code {
+          padding-right: 24px;
+        }
+      }
+      .left {
+        padding-right: 24px;
+      }
+      .title-text {
+        margin-bottom: 24px;
+      }
+      .product-info-list {
+        li {
+          font-size: 11px;
+          line-height: 16px;
+          margin-bottom: 12px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .equipment {
+        padding: 16px 14px;
+        margin: 24px 0;
+        &__title {
+          font-size: 16px;
+          line-height: 18px;
+          width: 100%;
+        }
+        &__view {
+          font-size: 11px;
+          line-height: 12px;
+          font-weight: 500;
+          width: auto;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+        .equipment-check {
+          label {
+            width: 32%;
+            height: 32px;
+            cursor: pointer;
+            span {
+              height: 32px;
+              width: 100%;
+              font-size: 11px;
+              line-height: 22px;
+            }
+          }
+        }
+      }
+
+      .price {
+        .price-title {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        .price-text {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        del {
+          font-size: 11px;
+          line-height: 16px;
+        }
+        &-sub {
+          margin: 24px 0;
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      .product-slider {
+        .big-card {
+          margin: 12px 0 0;
+          img {
+            height: 327px;
+          }
+        }
+        .small-card {
+          img {
+            height: 100px;
+          }
+        }
+      }
+
+      .info-box {
+        padding: 16px;
+        margin-top: 0;
+        &__title {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        &__text {
+          font-size: 11px;
+          line-height: 12px;
+        }
+        .guarantee {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        .certifications {
+          font-size: 11px;
+          line-height: 12px;
+        }
+      }
+
+      .card-tabs {
+        .card-tabs-box {
+          padding: 15px 15px 0 0;
+          .list {
+            margin-top: -30px;
+            &:first-child {
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      
+      .price-box {
+        .price-card {
+          width: 100%;
+        }
+      } 
+      
+      .description-tabs {
+        margin: 30px 0;
+        .desc-btn {
+          span {
+            font-size: 16px;
+            line-height: 16px;
+          }
+        }
+        .description-tab {
+          margin-top: 17px;
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+
+      .peculiarities {
+        h6 {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        p {
+          margin-top: 17px;
+          font-size: 11px;
+          margin-top: 12px;
+        }
+      }
+      
+      .price-box {
+        margin-top: 0;
+        .price-card {
+          padding: 16px;
+          margin-top: 16px;
+          &-head {
+            font-size: 16px;
+            line-height: 16px;
+          }
+
+          &-list {
+            margin: 24px 0;
+            li {
+              font-size: 18px;
+              line-height: 24px;
+              margin-bottom: 16px;
+              span {
+                font-weight: 500;
+              }
+              &:last-child {
+                margin-bottom: 0;
+              }
+            }
+          }
+          &-text {
+            font-size: 24px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+
+    .can-choose {
+      margin-top: 40px;
+      .can-choose-box {
+        .choose {
+          width: 100%;
+          height: 76px;
+          padding: 10px 16px;
+          margin: 0;
+          margin-bottom: 8px;
+          &-title {
+            font-size: 16px;
+            line-height: 18px;
+          }
+          &-btn {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+
+    .videos {
+      .title-text {
+        font-size: 24px;
+        line-height: 26px;
+      }
+      .video-js {
+        height: 196px;
+      }
+    }
+
+    .documentation {
+      .title-text {
+        margin-bottom: 24px;
+      }
+     .container {
+      padding-right: 0;
+     }
+    }
+
+    .hangar {
+      margin-top: 30px;
+      margin-bottom: 120px;
+      position: relative;
+      .swiper {
+        padding: 0 3px 15px;
+        margin-top: 24px;
+      }
+      .swiper-btn {
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &-item {
+        &__img {
+          height: 137px;
+        }
+        &__text {
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    
+    .recently-viewed {
+      margin: 60px 0 30px;
+    }
+
+    .design-filter {
+      margin-top: -20px;
+      &__title {
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 600;
+        color: #232C42;
+      }
+      label {
+        margin-right: 16px;
+        margin-bottom: 24px;
+      }
+      .select {
+        width: 100%;
+      }
+      .box {
+        width: 100%;
+      }
+    }
+
+    .completed-work {
+      .info {
+        margin: 30px 0 0;
+        .title-suptext {
+          font-size: 14px;
+          line-height: 16px;
+          margin: 12px 0 12px;
+        }
+        .title-subtext {
+          font-size: 11px;
+          line-height: 16px;
+        }
+        .price {
+          width: 215px;
+          padding: 22px 24px;
+          h5 {
+            font-size: 24px;
+            line-height: 28px;
+          }
+          p {
+            font-size: 11px;
+            line-height: 14px;
+          }
+        }
+      }
+      .urgent-question {
+        width: 100%;
+        padding: 24px 18px;
+        margin: 10px 0 65px;
+        margin-bottom: 40px;
+        h6 {
+          font-size: 16px;
+          line-height: 18px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .portfolio {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 16px;
+      margin-top: 30px;
+      &-card {
+        height: 235px;
+        padding: 22px;
+      }
+      &-name {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      &-address {
+        li {
+          font-size: 11px;
+          line-height: 14px;
+        }
+      }
+      &-link {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .spa {
+      .title-text {
+        margin: 30px 0;
+      }
+      .swiper-spa {
+        .spa-img {
+          height: 233px;
+        }
+      }
+
+      .spa-info {
+        margin-top: 24px;
+        li {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+      .want-btn {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .title {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .text {
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .equipment {
+        margin-top: 30px;
+        ul {
+          padding: 26px 24px;
+          li {
+            width: 100%;
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 700;
+            margin: 0 0 12px 0;
+            &:last-child {
+              width: 100%;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      .task {
+        margin-top: 30px;
+      }
+      .done {
+        margin: 24px 0;
+        li {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .photos-progress {
+      position: relative;
+      padding-bottom: 24px;
+      margin-top: 30px;
+      margin-bottom: 90px;
+      .swiper {
+        .photo {
+          height: 233px;
+        }
+      }
+      .swiper-btn {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .photos-final {
+      position: relative;
+      padding-bottom: 24px;
+      margin-bottom: 90px;
+      .swiper {
+        .photo {
+          height: 233px;
+        }
+      }
+      .swiper-btn {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    .review {
+      .review-info {
+        width: 100%;
+        img {
+          width: 25px;
+        }
+      }
+      .review-photo {
+        height: 150px;
+        margin-bottom: 30px;
+      }
+      .review-text {
+        font-size: 11px;
+        line-height: 16px;
+      }
+      .review-name {
+        font-size: 11px;
+        line-height: 16px;
+        margin-top: 12px;
+      }
+    }
+
+    .other-portfolio {
+      margin: -20px 0 0;
+    }
+
+    
+    .fars {
+      .faqs-tab {
+        &-head {
+          .faqs-tab-btn {
+            margin-bottom: 6px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+            span {
+              font-size: 11px;
+              line-height: 16px;
+            }
+          }
+        }
+        &-body {
+          .faqs-tab-text p {
+            font-size: 11px;
+            line-height: 16px;
+            margin-bottom: 12px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .team {
+      padding: 170px 0 20px;
+      .head-page {
+        margin-bottom: 30px;
+      }
+      .title-subtext {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .info {
+        font-size: 11px;
+        line-height: 12px;
+        &-subtext {
+          margin: 25px 0;
+        }
+        &-list {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            margin-right: 12px;
+            margin-bottom: 16px;
+            font-size: 11px;
+            line-height: 12px;
+            img {
+              width: 24px;
+            }
+          }
+        }
+      }
+      .team-info {
+        padding: 10px 0 0;
+        margin-top: 15px;
+        li {
+          padding: 10px 16px;
+          font-size: 11px;
+          line-height: 16px;
+          margin: 0 12px 12px 0;
+        }
+      }
+  
+      .swiper {
+        margin-top: 25px;
+      }
+      .swiper-btn {
+        margin-top: 35px;
+        button {
+          position: relative;
+          top: 0;
+        }
+      }
+      .team-card {
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+        padding: 24px 30px;
+        &-photo {
+          height: 210px;
+          img {
+            height: 210px;
+          }
+        }
+        &__name {
+          font-size: 16px;
+          line-height: 16px;
+        }
+        &__job {
+          font-size: 11px;
+          line-height: 16px;
+        }
+        &__experience {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+    .company {
+      padding-top: 170px;
+  
+      .head-page {
+        margin-bottom: 30px;
+      }
+  
+      .info {
+        .title-suptext {
+          margin: 22px 0 12px;
+          line-height: 18px;
+        }
+        .title-subtext {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &-box {
+          padding: 21px 18px;
+          p {
+            font-size: 11px;
+            line-height: 16px;
+          }
+          .experience {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #fff6;
+            border-radius: 0;
+            h6 {
+              font-size: 16px;
+              line-height: 16px;
+            }
+            p {
+              margin: 16px 0;
+            }
+            h5 {
+              font-size: 16px;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+  
+      .video-js {
+        height: 235px;
+      }
+      .designs {
+        margin: 30px 0;
+      }
+    }
+
+    .ourClients {
+      .ourClients-title {
+        margin-top: 30px;
+      }
+    }
+
+    .company-team {
+      margin: -130px 0 0 !important;
+      .conclusions {
+        margin-top: 17px;
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
+
+  .honest-guarantees {
+    padding: 30px 0;
+    .title-subtext {
+      font-size: 11px;
+      line-height: 16px;
+    }
+    .info-block {
+      div {
+        width: 49%;
+        margin-right: 0;
+        margin-bottom: 27px;
+      }
+      &__text {
+        font-size: 11px;
+        line-height: 12px;
+      }
+    }
   }
+
+  .officially {
+    &-box {
+      padding: 0;
+      border-radius: 0;
+      box-shadow: none;
+      .title-subtext {
+        margin: 10px 0 36px;
+        font-size: 11px;
+        line-height: 14px;
+      }
+      .info {
+        &-title {
+          font-size: 14px;
+          line-height: 16px;
+        }
+        &-list {
+          margin-top: 16px;
+          li {
+            width: 100%;
+            font-size: 11px;
+            line-height: 16px;
+          }
+        }
+
+        .select {
+          width: 100%;
+          margin: 24px 0;
+        }
+
+        &-box {
+          font-size: 11px;
+          line-height: 16px;
+          span {
+            font-size: 14px;
+            line-height: 16px;
+          }
+        }
+      }
+      .officially-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      .info-img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .presentation {
+    .info {
+      padding: 12px 24px;
+      font-size: 11px;
+      line-height: 16px;
+      margin: 12px 0 24px;
+    }
+    .cloud {
+      width: 50%;
+    }
+  }
+
+  .participate {
+    .title-text {
+      margin-bottom: 27px;
+    }
+    &-item {
+      width: 100%;
+      margin-bottom: 36px;
+      .name {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5%;
+      }
+      &:last-child {
+        .name {
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+  }
+
+  .meeting-box2 {
+    .meeting-city {
+      &-list {
+        li {
+          width: 100%;
+        }
+      }
+      &-item {
+        width: 100%;
+      }
+    }
+  }
+
+  .banner-tent {
+    .info {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  .production {
+    &-bg {
+      background: #F3F4F7;
+      padding-top: 170px;
+      border-radius: 0 0 20px 20px;
+    }
+    &-box {
+      background-image: url(../img/png/production2.png);
+      margin-top: 18px;
+      padding: 32px 0;
+      .title-text {
+        color: #fff;
+        margin-bottom: 0;
+      }
+      .title-subtext {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 22px 0 104px;
+      }
+      .item {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .monthly {
+    margin: 50px 0 30px;
+    .monthly-item {
+      width: 100%;
+      padding: 20px 28px;
+      height: 155px;
+      margin-right: 0;
+      color: #fff;
+      box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+      margin-top: 30px;
+      &-title {
+        strong {
+          font-size: 50px;
+          line-height: 40px;
+        }
+      }
+      &__text {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      &:last-child {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .implemented {
+    margin: 60px 0;
+    .title-text {
+      margin-bottom: 24px;
+    }
+    &-info {
+      .info-title {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .info-text {
+        font-size: 14px;
+        line-height: 16px;
+        width: 100%;
+      }
+    }
+  }
+
+  .equipped {
+    padding: 35px 0;
+    .title-text {
+      margin-bottom: 24px;
+    }
+  }
+
+  .finalPart {
+    margin: 30px 0;
+    .container {
+      padding-right: 0;
+    }
+    &-box {
+      overflow-x: scroll;
+      padding-bottom: 15px;
+    }
+    &-img {
+      min-width: 323px;
+      margin-right: 12px;
+    }
+  }
+
+  .getModel {
+    background: linear-gradient(0deg, rgba(245, 246, 255, 0.1) 0%, #f5f6ff 100%);
+    padding: 50px 0 0;
+    .title-subtext {
+      margin: 24px 0;
+    }
+  }
+
+  .team2 {
+    margin: 30px 0 15px;
+    &-img {
+      height: 220px;
+      margin-top: 24px;
+    }
+  }
+
+  .often-asked {
+    &-item {
+      font-size: 11px;
+      line-height: 16px;
+    }
+  }
+
+  
+
+  .complex2 {
+    padding: 30px 0;
+    .video-js {
+      height: 235px;
+    }
+  }
+}
+
 
   .search-catalogs {
     .catalog-nav {
