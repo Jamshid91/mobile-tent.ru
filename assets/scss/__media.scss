@@ -947,6 +947,18 @@
         padding-right: 24px;
       }
     }
+
+    .steps {
+      .steps-box {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .weDesign2 {
+      .weDesign-video {
+        margin-top: 24px;
+      }
+    }
   }
   
   .footer {
@@ -2110,6 +2122,13 @@
       width: 100%;
     }
   }
+
+  .teaches {
+    .teaches-item {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
 }
          
   .footer {
@@ -2753,6 +2772,52 @@
 
     .contacts2 {
       padding-top: 0;
+    }
+
+    .wrapper-design {
+      .head-page {
+        margin-bottom: 30px;
+      }
+      .wrapper-awning {
+        position: relative;
+        bottom: 0;
+        right: 0;
+        margin-top: -40px;
+        width: 100%;
+        object-fit: contain;
+      }
+      .wrapper-subinfo {
+        width: 100%;
+      }
+    }
+
+    .steps {
+      margin-top: 30px;
+      .title-text {
+        margin-bottom: 12px;
+      }
+      .steps-box {
+        margin-top: 24px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0px 8px 15px -5px rgba(29, 36, 20, 0.2);
+        padding: 28px 10px;
+      }
+      .steps-item {
+        padding: 0;
+        background: #fff;
+        border-radius: 0;
+        box-shadow: none;
+        &__img {
+          margin-right: 0;
+          margin-bottom: 12px;
+          width: 60px;
+        }
+        &__text {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
     }
   }
 
@@ -5123,6 +5188,76 @@
     .video-js {
       height: 235px;
     }
+  }
+
+  .wrapper-design {
+    background-position: 0 -300px;
+    .container {
+      padding-bottom: 40px;
+    }
+    .wrapper-subinfo {
+      padding: 25px 30px;
+      .subinfo__title {
+        font-size: 16px;
+        line-height: 18px;
+      }
+      .subinfo-item {
+        width: 100%;
+       .item-title {
+        font-size: 11px;
+        line-height: 16px;
+       }
+        .item-text {
+          font-size: 11px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+
+  .weDesign2 {
+    .title-text {
+      margin-bottom: 2px;
+    }
+    .video-js {
+      height: 235px;
+    }
+  }
+
+  .teaches {
+    .title-text {
+      margin-bottom: 24px;
+    }
+    .teaches-item {
+      width: 100%;
+      margin-bottom: 16px;
+      background-image: url(../img/png/card-bg2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 30px 20px;
+      &-img {
+        height: auto;
+        background-image: none;
+        img {
+          width: 122px;
+        }
+      }
+      &-info {
+        padding: 0;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  .team3 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .quiz-catalog {
+    background: #fff;
+    padding: 0;
   }
 }
 
