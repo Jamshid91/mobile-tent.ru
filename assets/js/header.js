@@ -11,7 +11,9 @@ const menuBtn = document.querySelector('.menu-btn'),
       rightHeads = document.querySelectorAll('.right-head'),
       catalogsProduct = document.querySelector('.catalogs-product'),
       searchCatalog = document.querySelector('.search-catalogs'),
-      searchInp = document.querySelector('.search__inp');
+      searchInp = document.querySelector('.search__inp'),
+      requestBtn = document.querySelectorAll('.call-me'),
+      popUpRequest = document.querySelector('.popUp-request');
 
 
 menuBtn.addEventListener('click', () => {
@@ -19,6 +21,12 @@ menuBtn.addEventListener('click', () => {
     menu.classList.toggle('show-menu');
     body.classList.toggle('bodyStopScroll');
 });
+
+requestBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    popUpRequest.classList.remove('d-none')
+  })
+})
 
 
 catalogsBtn.addEventListener('click', () => {
