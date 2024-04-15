@@ -11,7 +11,13 @@ $(document).ready(function() {
 
   const eqCheks = document.querySelectorAll('.equipment-check .check');
   const calculateBtns = document.querySelectorAll('.equipment-calculate');
-  const popUpExperience = document.querySelector('.popUp-experience');
+  const popUpExperience = document.querySelector('.popUp-calculate');
+  const equipment__view = document.querySelectorAll('.equipment__view');
+  const popUp_configurations = document.querySelector('.popUp-configurations');
+  const equipment_buy = document.querySelectorAll('.equipment-buy');
+  const popUp_buy = document.querySelector('.popUp-buy');
+  const view_catalog = document.querySelectorAll('.view-catalog__link');
+  const popUp_catalog = document.querySelector('.popUp-catalog');
 
 
   eqCheks.forEach(check => {
@@ -26,7 +32,31 @@ $(document).ready(function() {
 
   calculateBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        popUpExperience.classList.remove('d-none')
+        popUpExperience.classList.remove('d-none');
+        body.classList.add('bodyStopScroll')
       })
   });
-  
+ 
+
+  equipment__view.forEach(btn => {
+    btn.addEventListener('click', () => {
+      popUp_configurations.classList.remove('d-none');
+        body.classList.add('bodyStopScroll')
+      })
+  }); 
+ 
+
+  equipment_buy.forEach(btn => {
+    btn.addEventListener('click', () => {
+      popUp_buy.classList.remove('d-none');
+        body.classList.add('bodyStopScroll')
+      })
+  });  
+ 
+
+  view_catalog.forEach(btn => {
+    btn.addEventListener('click', () => {
+      popUp_catalog.classList.remove('d-none');
+        body.classList.add('bodyStopScroll')
+      })
+  }); 

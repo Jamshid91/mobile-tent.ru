@@ -59,6 +59,16 @@ const hangars = new Swiper('.swiper-hangars', {
   }
 });
 
+const wind = new Swiper('.swiper-wind', {
+  loop: true,
+  autoHeight: true,
+  spaceBetween: 30,
+      navigation: {
+      nextEl: '.swiper-wind-next',
+      prevEl: '.swiper-wind-prev',
+    },
+});
+
 const bestseller = new Swiper('.swiper-bestseller', {
     loop: true,
     grabCursor: true,
@@ -108,6 +118,15 @@ const showdown = new Swiper('.swiper-showdown', {
     },
 });
 
+const infoText = new Swiper('.swiper-infoText', {
+  loop: true,
+  autoHeight: true,
+  slidesPerView: 1,
+  spaceBetween: 24,
+});
+
+showdown.controller.control = infoText;
+infoText.controller.control = showdown;
 
 const our_tents = new Swiper('.swiper-our-tents', {
   loop: true,
@@ -172,3 +191,50 @@ const youCanGet_catalog = new Swiper('.swiper-youCanGet-catalog', {
         },
   }
 });
+
+$(document).ready(function() {
+  $('.wind-box').hide();
+  $('.wind-box:first-child').show();
+  $('.banner-item').click(function() {
+    let pageInfo = $(this).attr('data-wind');
+    $('.wind-box').hide();
+    $('.' + pageInfo).show();
+  })
+});
+
+const modelBtn = document.querySelector('.model__btn');
+const popUp_model = document.querySelector('.popUp-model');
+const request_contactsBtn = document.querySelectorAll('.request-contacts__btn');
+const popUp_requestContact = document.querySelector('.popUp-requestContact');
+const lowWick_btn = document.querySelector('.lowWick-faq');
+const popUp_lowWick = document.querySelector('.popUp-lowWick');
+const offer_btn = document.querySelector('.offer__btn');
+const popUp_offer = document.querySelector('.popUp-offer');
+const person_btn = document.querySelector('.person img');
+const popUp_person = document.querySelector('.popUp-person');
+
+
+
+request_contactsBtn.forEach(btn => {
+  btn.addEventListener('click', () => {
+    popUp_requestContact.classList.remove('d-none')
+  });
+});
+
+lowWick_btn.addEventListener('click', () => {
+  popUp_lowWick.classList.remove('d-none');
+  body.classList.add('bodyStopScroll')
+});
+
+offer_btn.addEventListener('click', () => {
+  popUp_offer.classList.remove('d-none');
+});
+
+person_btn.addEventListener('click', () => {
+  popUp_person.classList.remove('d-none');
+});
+
+modelBtn.addEventListener('click', () => {
+  popUp_model.classList.remove('d-none')
+});
+
